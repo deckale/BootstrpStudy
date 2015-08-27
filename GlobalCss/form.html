@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<link href="../Css/bootstrap.min.css" rel="stylesheet"/>-->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+</head>
+<body>
+
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="email">用户名</label>
+                <input type="email" class="form-control" placeholder="Email" id="email"/>
+            </div>
+
+            <div class="form-group">
+                <label>密码</label>
+                <input type="password" class="form-control" placeholder="密码"/>
+
+            </div>
+
+
+            <div class="form-group">
+                <label>File input</label>
+                <input type="file"/>
+                <p>请选择你要上传的文件</p>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"/>男
+                </label>
+            </div>
+
+            <select class="form-control">
+                <option>1</option>
+                <option>1</option>
+                <option>1</option>
+                <option>1</option>
+                <option>1</option>
+                <option>1</option>
+            </select>
+
+            <select class="form-control" multiple="multiple">
+                <option>1</option>
+                <option>1</option>
+                <option>1</option>
+                <option>1</option>
+                <option>1</option>
+                <option>1</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary">提交</button>
+
+        </form>
+
+        <br/>
+
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only">用户名</label>
+                <input type="email" class="form-control" placeholder="email"/>
+
+            </div>
+
+            <div class="form-group">
+                <label>password</label>
+                <input type="password" class="form-control" placeholder="password"/>
+            </div>
+
+            <div class="form-group">
+                <label class="sr-only">金额</label>
+                <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <input type="text" class="form-control"/>
+                    <div class="input-group-addon">.00</div>
+                </div>
+
+            </div>
+
+        </form>
+
+
+        <br/>
+
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2">email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control"/>
+                </div>
+            </div>
+
+            <textarea rows="3" class="form-control">
+
+            </textarea>
+        </form>
+
+
+        <br/>
+
+        <!--静态控件-将文本和input放在一行上 ??将button放在一行上-->
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-md-2">Email</label>
+                <div class="colmd-8">
+                    <p class="form-control-static">ssss@me.com
+                    </p>
+                </div>
+            </div>
+
+           <label class="sr-only">hello</label>
+            <input class="form-control focus"/>
+            <input class="form-control" />
+
+
+            <!--fieldset禁止，fieldset标签内的标签都不能使用，除了标签-->
+            <fieldset disabled>
+                <div class="form-group">
+                    <label class="sr-only">hello</label>
+                    <input class="form-control"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="sr-only">hello</label>
+                    <input class="form-control"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="sr-only">hello</label>
+                    <input class="form-control"/>
+                </div>
+            </fieldset>
+
+
+            <!--只读-->
+            <div class="form-group">
+                <label class="sr-only">hello</label>
+                <input class="form-control" placeholder="zhidukaung" readonly/>
+            </div>
+
+
+            <!--校验状态-->
+            <div class="form-group has-success">
+                <label class="control-label">hello</label>
+                <input type="text" class="form-control"/>
+
+            </div>
+
+            <!--使用字体库-->
+            <div class="form-group has-success has-feedback">
+                <label class="control-label">Hello</label>
+                <input type="text" class="form-control" placeholder="Hello" aria-describedby="inputsuccessstatus"/>
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+
+            </div>
+
+
+            <!--文本框大小-->
+            <input class="form-control input-lg" type="text" placeholder="large"/>
+            <input class="form-control " type="text" placeholder="default"/>
+            <input class="form-control input-sm" type="text" placeholder="small"/>
+
+
+            <!--辅助文本-->
+            <label class="sr-only">hello</label>
+            <input type="text" class="form-control" aria-describedby="helpBlock"/>
+            <span id="helpBlock" class="help-block"> this is a help</span>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

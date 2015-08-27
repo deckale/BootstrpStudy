@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../Css/bootstrap.min.css" rel="stylesheet"/>
+
+</head>
+<body>
+<!--<ul class="nav nav-tabs" id="mytab">-->
+<!--<li role="presentation" class="active"><a href="#">home</a></li>-->
+<!--<li role="presentation"><a href="#">index</a></li>-->
+<!--<li role="presentation"><a href="#">index2</a></li>-->
+<!--<li role="presentation"><a href="#">index3</a></li>-->
+
+<!--</ul>-->
+
+<!--<ul class="nav nav-pills" id="mytab">-->
+<!--<li role="presentation" class="active"><a href="#">home</a></li>-->
+<!--<li role="presentation"><a href="#">index</a></li>-->
+<!--<li role="presentation"><a href="#">index2</a></li>-->
+<!--<li role="presentation"><a href="#">index3</a></li>-->
+
+<!--</ul>-->
+
+<!--<ul class="nav nav-pills nav-stacked" id="mytab">-->
+<!--<li role="presentation" class="active"><a href="#">home</a></li>-->
+<!--<li role="presentation"><a href="#">index</a></li>-->
+<!--<li role="presentation"><a href="#">index2</a></li>-->
+<!--<li role="presentation"><a href="#">index3</a></li>-->
+
+<!--</ul>-->
+
+<ul class="nav nav-pills nav-justified" id="mytab" role="tablist">
+    <li role="presentation" class="active"><a href="#1">home</a></li>
+    <li role="presentation" class="disabled"><a href="#222">index</a></li>
+    <li role="presentation"><a href="#3">index2</a></li>
+    <li role="presentation"><a href="#4" class="dropdown-toggle" data-toggle="dropdown" role="button">下拉菜单
+
+    <span class="caret">
+
+    </span></a>
+    <ul class="dropdown-menu" role="menu">
+        <li role="presentation"><a href="#" role="menuitem">1</a></li>
+        <li role="presentation"><a href="#" role="menuitem">2</a></li>
+        <li role="presentation"><a href="#" role="menuitem">3</a></li>
+        <li role="presentation"><a href="#" role="menuitem">4</a></li>
+    </ul>
+
+    </li>
+
+    <script src="../Scripts/jquery-2.1.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $("#mytab a").click(function () {
+            var s=$(this).parent();
+            var ss2 = $(s).hasClass("disabled");
+
+            if(!ss2)
+                $(this).tab("show");
+        });
+
+
+    </script>
+</ul>
+</body>
+</html>
